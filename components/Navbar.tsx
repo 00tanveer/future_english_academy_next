@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import enMessages from '@/messages/en.json';
 import bnMessages from '@/messages/bn.json';
 import { useLanguage } from '@/components/LanguageProvider';
@@ -28,8 +29,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="#home" className="font-bold text-xl text-primary">
-            Future English Academy
+          <Link href="#home" className="flex items-center">
+            <Image 
+              src="/logo/logo-full-white-bg.png" 
+              alt="Future English Academy" 
+              width={180}
+              height={120}
+              priority
+              className="h-35 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

@@ -3,6 +3,7 @@
 import enMessages from '@/messages/en.json';
 import bnMessages from '@/messages/bn.json';
 import { useLanguage } from '@/components/LanguageProvider';
+import Image from 'next/image';
 
 export default function Instructor() {
   const { locale } = useLanguage();
@@ -18,12 +19,14 @@ export default function Instructor() {
         
         <div className="bg-white p-8 md:p-12 rounded-lg shadow-lg">
           {/* Instructor Photo Placeholder */}
-          <div className="flex justify-center mb-6">
-            <div className="w-32 h-32 bg-primary/20 rounded-full flex items-center justify-center">
-              <span className="text-5xl">👨‍🏫</span>
-            </div>
-          </div>
-          
+          <Image 
+            src='/images/chief_instructor.png'
+            alt="Instructor Photo"
+            width={120}
+            height={120}
+            priority
+            className="mx-auto mb-6 rounded-full"
+          />
           <h3 className="text-2xl md:text-3xl font-bold text-primary text-center mb-6">
             {t.name}
           </h3>
