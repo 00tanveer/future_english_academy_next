@@ -8,8 +8,9 @@
 [build.environment]
   NODE_VERSION = "20"
 
-# Redirect rules for Next.js
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# Ensure public folder is accessible
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
