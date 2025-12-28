@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fff0e4;      /* Warm cream background */
+  --foreground: #000000;      /* Black text */
+  
+  /* Future English Academy Brand Colors */
+  --primary: #5e17eb;         /* Optimist Purple - main CTAs */
+  --primary-hover: #4a12bc;   /* Darker purple on hover */
+  --accent: #ff914d;          /* Future Orange - highlights */
+  --accent-hover: #ff7a2e;    /* Darker orange on hover */
+  --danger: #ef4444;          /* Red for warnings */
+  --muted: #ffe8d6;           /* Lighter cream for cards */
+  --muted-foreground: #4a4a4a; /* Dark gray for secondary text */
+  --border: #ffd4b3;          /* Soft peachy border */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-danger: var(--danger);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  
+  --font-sans: var(--font-urbanist);
+  --font-bengali: var(--font-noto-sans-bengali);
+  
+  --default-font-family: var(--font-urbanist);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-urbanist), system-ui, sans-serif;
 }
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Bengali text styling */
+.bengali {
+  font-family: var(--font-noto-sans-bengali), system-ui, sans-serif;
+}
+
+/* Make sure foreground is always readable */
+.text-foreground {
+  color: #000000 !important;
+}
+
+.text-muted-foreground {
+  color: #4a4a4a !important;
+}
+

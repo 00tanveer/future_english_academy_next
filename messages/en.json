@@ -1,0 +1,234 @@
+{
+  "nav": {
+    "home": "Home",
+    "problem": "The Problem",
+    "solution": "Solution",
+    "offer": "What You Get",
+    "whoisfor": "Who This Is For",
+    "instructor": "Instructor",
+    "program": "Program",
+    "pricing": "Pricing",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "headline": "Speak Up: Find Your Voice in English",
+    "subheadline": "Go from hesitant speaker to confident conversationalist in 4 weeks. No grammar drills. No boring lectures. Just real conversations that build real confidence.",
+    "cta": "Register for Next Cohort → ৳8,000",
+    "supportingText": "Next cohort starts [DATE] • Only 8-10 spots available"
+  },
+  "problem": {
+    "heading": "You Already Know English. You Just Can't Speak It.",
+    "intro": "Sound familiar?",
+    "points": [
+      "You can read English articles and understand movies",
+      "But when it's your turn to speak, your mind goes blank",
+      "You translate from Bangla in your head—it's slow and awkward",
+      "You avoid English conversations because you're scared of sounding stupid",
+      "You've tried YouTube videos, grammar books, and apps—nothing works"
+    ],
+    "realProblemLabel": "The real problem?",
+    "realProblem": "You've been learning *about* English. Not practicing *speaking* English."
+  },
+  "solution": {
+    "heading": "The Only Way to Learn Speaking Is... Speaking",
+    "intro": "Speak Up isn't another English course. It's a speaking lab.",
+    "subheading": "Here's how it works:",
+    "points": [
+      {
+        "title": "You speak. A lot.",
+        "description": "Every class, you'll speak—not listen to lectures. Short conversations, storytelling, debates, real-world scenarios."
+      },
+      {
+        "title": "Small groups = more speaking time",
+        "description": "Only 8-10 students per cohort. No hiding in the back."
+      },
+      {
+        "title": "Mistakes are the point",
+        "description": "You'll mess up. We'll celebrate it. That's how you learn."
+      },
+      {
+        "title": "Real situations, not textbooks",
+        "description": "Movie reviews. Podcast discussions. Mock interviews. Dating scenarios. The English you'll actually use."
+      }
+    ],
+    "footer": "4 weeks. 15 hours. Real results."
+  },
+  "offer": {
+    "heading": "What You Get for ৳8,000",
+    "items": [
+      {
+        "icon": "🗣️",
+        "title": "10 Live Speaking Classes",
+        "subtitle": "(15 hours total)",
+        "description": "Small cohort of 8-10 learners • You speak in every class"
+      },
+      {
+        "icon": "🎬",
+        "title": "Real Practice",
+        "description": "Movie reviews • Debates • Group discussions • Mock interviews • Social scenarios"
+      },
+      {
+        "icon": "🛡️",
+        "title": "Safe Environment",
+        "description": "Small groups • Mistakes welcomed • No judgment"
+      },
+      {
+        "icon": "📱",
+        "title": "Daily Practice",
+        "description": "App-based speaking prompts between classes"
+      },
+      {
+        "icon": "🏆",
+        "title": "Rewards & Recognition",
+        "description": "Participation points • \"Most Improved\" awards • Graduation certificate"
+      },
+      {
+        "icon": "🤝",
+        "title": "1 Physical Meetup",
+        "description": "English-only hangout with your cohort"
+      },
+      {
+        "icon": "🌐",
+        "title": "Lifetime Community Access",
+        "description": "Stay connected and keep practicing"
+      }
+    ]
+  },
+  "whoisfor": {
+    "heading": "Is This For You?",
+    "perfectLabel": "This program is perfect if you:",
+    "perfectList": [
+      "Can read and understand English reasonably well",
+      "Want to speak confidently in casual and semi-casual conversations",
+      "Are tired of grammar courses that don't help you speak",
+      "Are motivated by better job opportunities and social confidence",
+      "Are willing to make mistakes and practice in front of others",
+      "Can commit to 4 weeks and show up consistently"
+    ],
+    "notForLabel": "This is NOT for you if:",
+    "notForList": [
+      "You're an absolute beginner (can't read basic English)",
+      "You want IELTS/TOEFL exam preparation",
+      "You need business/corporate English",
+      "You want grammar and writing lessons",
+      "You're looking for a \"sit back and listen\" course"
+    ]
+  },
+  "instructor": {
+    "heading": "Meet Your Instructor",
+    "name": "Tanveer Fahad Haq",
+    "quote": "I learned English the hard way—through hundreds of sales calls, pitches to investors, and conversations where I couldn't afford to freeze.\n\nNo grammar books. No classrooms. Just real pressure and real practice.\n\nThat's exactly how I'll teach you.",
+    "credentials": [
+      "IELTS 8.5 (Speaking: Band 9 - Perfect Score)",
+      "7+ years using English in sales, startups, and community events",
+      "Not a traditional teacher—and that's the point"
+    ],
+    "mission": "I'm not here to teach you perfect English.",
+    "missionSub": "I'm here to help you speak confidently enough to grab the opportunities you want."
+  },
+  "program": {
+    "heading": "Your 4-Week Journey",
+    "weeks": [
+      {
+        "title": "Week 1: Breaking Fear",
+        "classes": [
+          "Class 1: Break the ice, short intros, English-only safe space (1hr)",
+          "Class 2: Think in English, daily conversations, survival phrases (1hr)"
+        ]
+      },
+      {
+        "title": "Week 2: Building Comfort",
+        "classes": [
+          "Class 3: Hold conversations, ask follow-ups, pair speaking (2hrs)",
+          "Class 4: Express opinions, describe people/places, get comfortable with discomfort (2hrs)"
+        ]
+      },
+      {
+        "title": "Week 3: Real-World Expression",
+        "classes": [
+          "Class 5: Tell simple stories, personal experiences (2hrs)",
+          "Class 6: Friendly debates, speak under pressure (1hr)"
+        ]
+      },
+      {
+        "title": "Week 4: Application",
+        "classes": [
+          "Class 7: Movie review, opinion + reasoning (1hr)",
+          "Class 8: Real-life discussions, roleplaying (1hr)"
+        ]
+      },
+      {
+        "title": "Week 5: Confidence",
+        "classes": [
+          "Class 9: Real-life scenarios - interviews, dating, sales (1hr)",
+          "Class 10: Final speaking challenge, reflection, celebration (2hrs)"
+        ]
+      }
+    ],
+    "plus": "Plus: Daily app practice, 1 physical meetup, lifetime community",
+    "progression": "Progression: Fear → Comfort → Expression → Application → Confidence"
+  },
+  "pricing": {
+    "heading": "Ready to Find Your Voice?",
+    "price": "৳8,000 for the complete program",
+    "includes": [
+      "10 live classes (15 hours)",
+      "Small cohort (8-10 only)",
+      "Daily practice app",
+      "Physical meetup",
+      "Lifetime community access"
+    ],
+    "nextCohort": "Next Cohort: [Start Date]",
+    "spotsAvailable": "Spots Available: 8-10 only",
+    "cta": "Register Now",
+    "payment": "Payment: bKash, Nagad, Bank Transfer",
+    "questions": "Questions? Contact us on WhatsApp: [Number]"
+  },
+  "faq": {
+    "heading": "Frequently Asked Questions",
+    "questions": [
+      {
+        "q": "I'm very shy. Will I be forced to speak?",
+        "a": "Yes—but gently. We use a buddy system and warm-up sessions to ease you in. Everyone speaks, but we start small (30-60 seconds). The whole point is to get comfortable being uncomfortable."
+      },
+      {
+        "q": "What if I make a lot of mistakes?",
+        "a": "Perfect! That's exactly the point. We celebrate mistakes. You'll never improve if you don't try and fail. This is a judgment-free zone."
+      },
+      {
+        "q": "Is this IELTS/TOEFL preparation?",
+        "a": "No. This program focuses on casual and semi-casual conversational English. If you need exam prep, this isn't the right fit."
+      },
+      {
+        "q": "Do I need to be fluent already?",
+        "a": "No, but you should be able to read and understand basic English. If you can read this website, you're ready."
+      },
+      {
+        "q": "What if I miss a class?",
+        "a": "We'll provide recordings, but live participation is critical. If you miss more than 2 classes, you won't get the full benefit."
+      },
+      {
+        "q": "Is there a refund policy?",
+        "a": "If you attend Class 1 and feel this isn't for you, we'll refund 100%. After that, no refunds—because we'll have reserved your spot."
+      },
+      {
+        "q": "Can I join if I'm outside Dhaka?",
+        "a": "Yes! Classes are online (except the 1 physical meetup, which is optional)."
+      },
+      {
+        "q": "What level of English will I reach?",
+        "a": "You won't become fluent in 4 weeks. But you WILL be able to hold 10-15 minute conversations without freezing, express your opinions, and feel confident in casual settings."
+      }
+    ]
+  },
+  "finalCta": {
+    "heading": "Stop Waiting. Start Speaking.",
+    "line1": "You've spent years \"learning\" English.",
+    "line2": "It's time to actually speak it.",
+    "nextCohort": "Next cohort starts [DATE]",
+    "spots": "Only 8-10 spots.",
+    "cta": "Register Now - ৳8,000",
+    "stillQuestions": "Still have questions?",
+    "whatsapp": "WhatsApp us: [Number]"
+  }
+}
