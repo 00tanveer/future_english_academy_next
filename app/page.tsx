@@ -14,7 +14,8 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="pt-16">
+      {/* Main content with left sidebar spacing on all screens */}
+      <main className="pt-16 pl-30 md:pl-64 pr-0">
         <Hero />
         <Problem />
         <Solution />

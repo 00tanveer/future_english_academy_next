@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import enMessages from '@/messages/en.json';
@@ -10,24 +10,51 @@ import { useLanguage } from '@/components/LanguageProvider';
 export default function Navbar() {
   const { locale, toggleLanguage } = useLanguage();
   const t = locale === 'en' ? enMessages.nav : bnMessages.nav;
-  const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
 
   const navLinks = [
-    { href: '#home', label: t.home },
-    { href: '#problem', label: t.problem },
-    { href: '#solution', label: t.solution },
-    { href: '#offer', label: t.offer },
-    { href: '#whoisfor', label: t.whoisfor },
-    { href: '#instructor', label: t.instructor },
-    { href: '#program', label: t.program },
-    { href: '#pricing', label: t.pricing },
-    { href: '#faq', label: t.faq },
+    { href: '#home', label: t.home, id: 'home' },
+    { href: '#problem', label: t.problem, id: 'problem' },
+    { href: '#solution', label: t.solution, id: 'solution' },
+    { href: '#offer', label: t.offer, id: 'offer' },
+    { href: '#whoisfor', label: t.whoisfor, id: 'whoisfor' },
+    { href: '#instructor', label: t.instructor, id: 'instructor' },
+    { href: '#program', label: t.program, id: 'program' },
+    { href: '#pricing', label: t.pricing, id: 'pricing' },
+    { href: '#faq', label: t.faq, id: 'faq' },
   ];
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        rootMargin: '-20% 0px -60% 0px',
+        threshold: 0.1,
+      }
+    );
+
+    // Observe all sections
+    navLinks.forEach((link) => {
+      const element = document.getElementById(link.id);
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <>
+      {/* Top Navbar - Logo + Language Toggle */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-md">
+        <div className="flex justify-between items-center h-16 px-4 sm:px-6">
           {/* Logo */}
           <Link href="#home" className="flex items-center">
             <Image 
@@ -40,79 +67,37 @@ export default function Navbar() {
             />
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="text-foreground hover:text-primary transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
-            
-            {/* Language Switcher */}
-            <button
-              onClick={toggleLanguage}
-              className="px-4 py-2 bg-accent hover:bg-accent-hover text-white rounded-full text-sm font-semibold transition-colors"
-            >
-              {locale === 'en' ? 'বাংলা' : 'English'}
-            </button>
-          </div>
-
-          {/* Mobile Menu Button */}
+          {/* Language Toggle */}
           <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-md text-foreground hover:bg-muted"
-            aria-label="Toggle menu"
+            onClick={toggleLanguage}
+            className="px-4 py-2 bg-accent hover:bg-accent-hover text-white rounded-full text-sm font-semibold transition-colors"
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              {isOpen ? (
-                <path d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
+            {locale === 'en' ? 'বাংলা' : 'English'}
           </button>
         </div>
-      </div>
+      </nav>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-white border-t border-border">
-          <div className="px-4 py-4 space-y-3">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="block py-2 text-foreground hover:text-primary transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
-            
-            <button
-              onClick={() => {
-                toggleLanguage();
-                setIsOpen(false);
-              }}
-              className="w-full py-2 bg-accent hover:bg-accent-hover text-white rounded-lg text-sm font-semibold transition-colors"
+      {/* Left Sidebar - Table of Contents (Mobile + Desktop) */}
+      <aside className="fixed left-0 top-16 bottom-0 w-30 md:w-64 bg-muted/50 backdrop-blur-sm border-r border-border overflow-y-auto z-40">
+        <div className="p-3 md:p-6 space-y-2">
+          <h3 className="text-xs uppercase tracking-wide text-muted-foreground font-bold mb-4">
+            Speak Up - 5 week English Speaking Course
+          </h3>
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`block py-2 px-3 text-xs md:text-sm rounded-md transition-colors ${
+                activeSection === link.id
+                  ? 'bg-primary text-white font-semibold'
+                  : 'text-foreground hover:text-primary hover:bg-white/50'
+              }`}
             >
-              {locale === 'en' ? 'বাংলা' : 'English'}
-            </button>
-          </div>
+              {link.label}
+            </Link>
+          ))}
         </div>
-      )}
-    </nav>
+      </aside>
+    </>
   );
 }

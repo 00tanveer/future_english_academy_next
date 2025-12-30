@@ -10,7 +10,7 @@ export default function Hero() {
   const t = locale === 'en' ? enMessages.hero : bnMessages.hero;
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center px-4 py-20 bg-background">
+    <section id="home" className="relative min-h-screen flex items-center justify-center pr-4 pl-0 py-20 bg-background">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
           {t.headline}

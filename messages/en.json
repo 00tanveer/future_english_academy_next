@@ -12,9 +12,9 @@
   },
   "hero": {
     "headline": "Speak Up: Find Your Voice in English",
-    "subheadline": "Go from hesitant speaker to confident conversationalist in 4 weeks. No grammar drills. No boring lectures. Just real conversations that build real confidence.",
-    "cta": "Register for Next Cohort → ৳8,000",
-    "supportingText": "Next cohort starts [DATE] • Only 8-10 spots available"
+    "subheadline": "Go from hesitant speaker to confident conversationalist in 5 weeks. No grammar drills. No boring lectures. Just real conversations that build real confidence.",
+    "cta": "Register for Next Batch → ৳8,000",
+    "supportingText": "Next batch starts 15/01/2026 • Only 8-10 spots available"
   },
   "problem": {
     "heading": "You Already Know English. You Just Can't Speak It.",
@@ -40,18 +40,18 @@
       },
       {
         "title": "Small groups = more speaking time",
-        "description": "Only 8-10 students per cohort. No hiding in the back."
+        "description": "Only 8-10 students per batch. No hiding in the back."
       },
       {
         "title": "Mistakes are the point",
-        "description": "You'll mess up. We'll celebrate it. That's how you learn."
+        "description": "You'll mess up. We'll show you the right way. That's how you learn."
       },
       {
         "title": "Real situations, not textbooks",
-        "description": "Movie reviews. Podcast discussions. Mock interviews. Dating scenarios. The English you'll actually use."
+        "description": "Movie reviews. Podcast discussions. Mock interviews. Meeting someone new. You'll learn how to speak English in various real situations."
       }
     ],
-    "footer": "4 weeks. 15 hours. Real results."
+    "footer": "5 weeks. 15 hours class time. Over 40 hours of monthly practice. Real results with consistent effort"
   },
   "offer": {
     "heading": "What You Get for ৳8,000",
@@ -75,7 +75,7 @@
       {
         "icon": "📱",
         "title": "Daily Practice",
-        "description": "App-based speaking prompts between classes"
+        "description": "App-based speaking practice outside of classes"
       },
       {
         "icon": "🏆",
@@ -84,13 +84,13 @@
       },
       {
         "icon": "🤝",
-        "title": "1 Physical Meetup",
-        "description": "English-only hangout with your cohort"
+        "title": "1 Grand Physical Meetup",
+        "description": "One final class and physcial hangout with your classmates, marking the end of the program with celebrations and reflections"
       },
       {
         "icon": "🌐",
         "title": "Lifetime Community Access",
-        "description": "Stay connected and keep practicing"
+        "description": "Stay connected in the community even after the program ends and keep practicing"
       }
     ]
   },
@@ -103,14 +103,11 @@
       "Are tired of grammar courses that don't help you speak",
       "Are motivated by better job opportunities and social confidence",
       "Are willing to make mistakes and practice in front of others",
-      "Can commit to 4 weeks and show up consistently"
+      "Can commit to 5 weeks and show up consistently"
     ],
     "notForLabel": "This is NOT for you if:",
     "notForList": [
       "You're an absolute beginner (can't read basic English)",
-      "You want IELTS/TOEFL exam preparation",
-      "You need business/corporate English",
-      "You want grammar and writing lessons",
       "You're looking for a \"sit back and listen\" course"
     ]
   },
@@ -127,7 +124,7 @@
     "missionSub": "I'm here to help you speak confidently enough to grab the opportunities you want."
   },
   "program": {
-    "heading": "Your 4-Week Journey",
+    "heading": "Your 5-Week Journey",
     "weeks": [
       {
         "title": "Week 1: Breaking Fear",
@@ -178,18 +175,18 @@
       "Physical meetup",
       "Lifetime community access"
     ],
-    "nextCohort": "Next Cohort: [Start Date]",
+    "nextCohort": "Next Batch: 15/01/2026",
     "spotsAvailable": "Spots Available: 8-10 only",
     "cta": "Register Now",
     "payment": "Payment: bKash, Nagad, Bank Transfer",
-    "questions": "Questions? Contact us on WhatsApp: [Number]"
+    "questions": "Questions? Contact us on WhatsApp: 01751978486"
   },
   "faq": {
     "heading": "Frequently Asked Questions",
     "questions": [
       {
         "q": "I'm very shy. Will I be forced to speak?",
-        "a": "Yes—but gently. We use a buddy system and warm-up sessions to ease you in. Everyone speaks, but we start small (30-60 seconds). The whole point is to get comfortable being uncomfortable."
+        "a": "Yes—but gently. We will assing you a peer/buddy from the class, and do warm-up sessions to ease you in. Everyone will speak, but we will start small (30-60 seconds). The whole point is to get comfortable being uncomfortable."
       },
       {
         "q": "What if I make a lot of mistakes?",
@@ -202,6 +199,10 @@
       {
         "q": "Do I need to be fluent already?",
         "a": "No, but you should be able to read and understand basic English. If you can read this website, you're ready."
+      },
+      {
+         "q": "How does the private app portal work?",
+         "a": "In the portal, you will find daily prompts to send voice recordings on different topics. The chief instructor will provide feedback against those recordings daily."
       },
       {
         "q": "What if I miss a class?",
@@ -217,7 +218,7 @@
       },
       {
         "q": "What level of English will I reach?",
-        "a": "You won't become fluent in 4 weeks. But you WILL be able to hold 10-15 minute conversations without freezing, express your opinions, and feel confident in casual settings."
+        "a": "You won't become fluent in 5 weeks. But we can safely say that you will speak twice as better than before. You WILL be able to hold 10-15 minute conversations without freezing, express your opinions, and feel confident in casual or semi-formal settings."
       }
     ]
   },
@@ -225,10 +226,10 @@
     "heading": "Stop Waiting. Start Speaking.",
     "line1": "You've spent years \"learning\" English.",
     "line2": "It's time to actually speak it.",
-    "nextCohort": "Next cohort starts [DATE]",
+    "nextCohort": "Next cohort starts 15/01/2026",
     "spots": "Only 8-10 spots.",
     "cta": "Register Now - ৳8,000",
     "stillQuestions": "Still have questions?",
-    "whatsapp": "WhatsApp us: [Number]"
+    "whatsapp": "WhatsApp us: 01751978486"
   }
 }
